@@ -10,15 +10,7 @@ public class Route {
         this.to = to;
         this.style = style;
     }
-    public String getFrom() {
-        return from;
-    }
-    public String getTo() {
-        return to;
-    }
-    public String getStyle() {
-        return style;
-    }
+
     public String toString() {
         return "Route: " + from + " -> " + to + " (" + style + ")";
     }

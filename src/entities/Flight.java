@@ -12,18 +12,7 @@ public class Flight {
         this.airline = airline;
         this.price = price;
     }
-    public String getFrom() {
-        return from;
-    }
-    public String getTo() {
-        return to;
-    }
-    public String getAirline() {
-        return airline;
-    }
-    public double getPrice() {
-        return price;
-    }
+
     public String toString() {
         return "Flight: " + airline + " from " + from + " to " + to + " at $" + price;
     }

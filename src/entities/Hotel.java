@@ -27,4 +27,7 @@ public class Hotel {
     public double totalPrice() {
         return nights * pricePerNight;
     }
+    public String toString() {
+        return "Hotel: " + name + " in " + city + " for " + nights + " nights at $" + pricePerNight + " per night";
+    }
 }

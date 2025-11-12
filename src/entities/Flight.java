@@ -24,4 +24,7 @@ public class Flight {
     public double getPrice() {
         return price;
     }
+    public String toString() {
+        return "Flight: " + airline + " from " + from + " to " + to + " at $" + price;
+    }
 }

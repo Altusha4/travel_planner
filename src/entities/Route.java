@@ -19,4 +19,7 @@ public class Route {
     public String getStyle() {
         return style;
     }
+    public String toString() {
+        return "Route: " + from + " -> " + to + " (" + style + ")";
+    }
 }

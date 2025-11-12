@@ -19,4 +19,7 @@ public class Trip {
     public Hotel getHotel() {
         return hotel;
     }
+    public String toString() {
+        return "Trip: \n" + route.toString() + "\n" + flight.toString() + "\n" + hotel.toString();
+    }
 }

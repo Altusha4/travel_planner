@@ -2,29 +2,18 @@ package builder;
 import entities.*;
 
 public class TripDirector {
-    private TripBuilder builder;
-
-    public TripDirector(TripBuilder builder) {
-        this.builder = builder;
+    public Trip buildStandardTrip() {
+        return new TripBuilder()
+                .setRoute(new Route("Almaty", "Rome", "scenic"))
+                .setFlight(new Flight("Almaty", "Rome", "Air Astana", 500.0))
+                .setHotel(new Hotel("Rome", "Roma Hotel", 3, 120.0))
+                .build();
     }
-    public Trip createStandardTrip() {
-        Route route = new Route("Astana", "Rome", "scenic");
-        Flight flight = new Flight("Astana", "Rome", "Air Astana", 500.0);
-        Hotel hotel = new Hotel("Rome", "Roma Hotel", 3, 120.0);
-
-        return builder.setRoute(route)
-                      .setFlight(flight)
-                      .setHotel(hotel)
-                      .build();
-    }
-    public Trip createCustomTrip(String from, String to) {
-        Route route = new Route(from, to, "scenic");
-        Flight flight = new Flight(from, to, "Air Astana", 600.0);
-        Hotel hotel = new Hotel(to, "Hotel Example", 4, 150.0);
-
-        return builder.setRoute(route)
-                .setFlight(flight)
-                .setHotel(hotel)
+    public Trip buildCustomTrip(String from, String to, String airline, double price, String hotelName, int nights, double pricePerNight) {
+        return new TripBuilder()
+                .setRoute(new Route(from, to, "scenic"))
+                .setFlight(new Flight(from, to, airline, price))
+                .setHotel(new Hotel(to, hotelName, nights, pricePerNight))
                 .build();
     }
 }

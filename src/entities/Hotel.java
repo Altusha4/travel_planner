@@ -12,7 +12,12 @@ public class Hotel {
         this.nights = nights;
         this.pricePerNight = pricePerNight;
     }
-
+    public int getNights() {
+        return nights;
+    }
+    public double getPricePerNight() {
+        return pricePerNight;
+    }
     public String toString() {
         return "Hotel: " + name + " in " + city + " for " + nights + " nights at $" + pricePerNight + " per night";
     }

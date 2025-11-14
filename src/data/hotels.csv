@@ -1,42 +1,42 @@
-city,name,nights,pricePerNight
-Rome,Roma Hotel,3,120
-Paris,Hotel Paris,5,150
-London,London Inn,4,180
-Istanbul,Turkish Delight Hotel,3,80
-Dubai,Burj Al Arab,7,1000
-Moscow,Red Square Hotel,4,90
-Beijing,Great Wall Inn,5,110
-Tokyo,Sakura Hotel,6,200
-New York,Manhattan Suites,4,300
-Singapore,Marina Bay Stay,5,250
-Frankfurt,German Comfort,3,130
-Madrid,Spanish Fiesta,4,100
-Bangkok,Thai Paradise,7,70
-Sydney,Opera House Hotel,5,220
-Amsterdam,Canalside Inn,4,140
-Seoul,K-Pop Stay,3,150
-Mumbai,Taj Palace,5,120
-Vienna,Music City Hotel,4,130
-Prague,Castle View,3,90
-Warsaw,Old Town Inn,4,80
-Helsinki,Northern Lights Lodge,3,160
-Cairo,Pyramid Resort,5,95
-Athens,Acropolis View,4,110
-Lisbon,Atlantic Breeze,3,100
-Stockholm,Viking Hotel,4,170
-Oslo,Fjord Retreat,3,190
-Copenhagen,Hygge House,4,150
-Brussels,EU Quarter Hotel,3,120
-Zurich,Alpine Grand,5,280
-Geneva,Lake View,4,240
-Dublin,Irish Pub Inn,3,130
-Manchester,Music Factory Hotel,4,110
-Edinburgh,Scottish Castle,5,180
-Barcelona,Gaudi Suites,4,160
-Milan,Fashion District,3,190
-Venice,Canal Palace,4,210
-Berlin,Wall Memorial Hotel,3,120
-Hamburg,Port City Inn,4,110
-Munich,Oktoberfest Lodge,5,140
-Shanghai,Bund View,4,170
-Hong Kong,Victoria Peak Hotel,6,230
+city,name,pricePerNight
+Rome,Roma Hotel,120
+Paris,Hotel Paris,150
+London,London Inn,180
+Istanbul,Turkish Delight Hotel,80
+Dubai,Burj Al Arab,1000
+Moscow,Red Square Hotel,90
+Beijing,Great Wall Inn,110
+Tokyo,Sakura Hotel,200
+New York,Manhattan Suites,300
+Singapore,Marina Bay Stay,250
+Frankfurt,German Comfort,130
+Madrid,Spanish Fiesta,100
+Bangkok,Thai Paradise,70
+Sydney,Opera House Hotel,220
+Amsterdam,Canalside Inn,140
+Seoul,K-Pop Stay,150
+Mumbai,Taj Palace,120
+Vienna,Music City Hotel,130
+Prague,Castle View,90
+Warsaw,Old Town Inn,80
+Helsinki,Northern Lights Lodge,160
+Cairo,Pyramid Resort,95
+Athens,Acropolis View,110
+Lisbon,Atlantic Breeze,100
+Stockholm,Viking Hotel,170
+Oslo,Fjord Retreat,190
+Copenhagen,Hygge House,150
+Brussels,EU Quarter Hotel,120
+Zurich,Alpine Grand,280
+Geneva,Lake View,240
+Dublin,Irish Pub Inn,130
+Manchester,Music Factory Hotel,110
+Edinburgh,Scottish Castle,180
+Barcelona,Gaudi Suites,160
+Milan,Fashion District,190
+Venice,Canal Palace,210
+Berlin,Wall Memorial Hotel,120
+Hamburg,Port City Inn,110
+Munich,Oktoberfest Lodge,140
+Shanghai,Bund View,170
+Hong Kong,Victoria Peak Hotel,230

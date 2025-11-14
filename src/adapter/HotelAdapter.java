@@ -5,7 +5,6 @@ import java.io.File;
 
 public class HotelAdapter {
     public Hotel getHotel(String city) throws Exception {
-
         File file = new File("src/data/hotels.csv");
         Scanner scanner = new Scanner(file);
 
@@ -18,9 +17,8 @@ public class HotelAdapter {
 
             if (data[0].equalsIgnoreCase(city)) {
                 scanner.close();
-                return new Hotel(data[0], data[1],
-                        Integer.parseInt(data[2]),
-                        Double.parseDouble(data[3]));
+                return new Hotel(data[0], data[1], 0,
+                        Double.parseDouble(data[2]));
             }
         }
         scanner.close();

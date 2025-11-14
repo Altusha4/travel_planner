@@ -12,6 +12,12 @@ public class Hotel {
         this.nights = nights;
         this.pricePerNight = pricePerNight;
     }
+    public String getCity() {
+        return city;
+    }
+    public String getName() {
+        return name;
+    }
     public int getNights() {
         return nights;
     }

@@ -17,6 +17,6 @@ public class Flight {
     }
 
     public String toString() {
-        return "Flight: " + airline + " from " + from + " to " + to + " at $" + price;
+        return airline + " from " + from + " to " + to + " at $" + price;
     }
 }

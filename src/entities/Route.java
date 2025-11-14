@@ -12,6 +12,6 @@ public class Route {
     }
 
     public String toString() {
-        return "Route: " + from + " -> " + to + " (" + style + ")";
+        return from + " -> " + to + " (" + style + ")";
     }
 }

@@ -12,6 +12,9 @@ public class Trip {
     }
 
     public String toString() {
-        return "Trip: \n" + route + "\n" + flight + "\n" + hotel;
+        return "TRIP\n" +
+                "Route: " + route + "\n" +
+                "Flight: " + flight + "\n" +
+                "Hotel: " + hotel;
     }
 }

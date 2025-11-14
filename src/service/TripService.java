@@ -14,20 +14,15 @@ public class TripService {
         System.out.print("To: ");
         String to = scanner.nextLine();
 
-        System.out.print("How many nights: ");
+        System.out.print("Nights: ");
         int nights = scanner.nextInt();
 
         try {
             Flight flight = new FlightAdapter().getFlight(from, to);
             Hotel hotelBase = new HotelAdapter().getHotel(to);
 
-            if (flight == null) {
-                System.out.println("Flight " + from + " to " + to + " not found");
-                return;
-            }
-
-            if (hotelBase == null) {
-                System.out.println("Hotel " + to + " not found");
+            if (flight == null || hotelBase == null) {
+                System.out.println("Not found");
                 return;
             }
 
@@ -40,13 +35,13 @@ public class TripService {
                     .setHotel(hotel)
                     .build();
 
-            System.out.println(trip);
+            System.out.println("\n" + trip);
 
-            double total = flight.getPrice() + (hotel.getNights() * hotel.getPricePerNight());
-            System.out.println("Total cost: $" + total);
+            double total = flight.getPrice() + (nights * hotelBase.getPricePerNight());
+            System.out.println("Total: $" + total);
 
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("Error");
         }
         scanner.close();
     }

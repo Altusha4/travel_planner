@@ -14,8 +14,15 @@ public class TripService {
         System.out.print("To: ");
         String to = scanner.nextLine();
 
+        System.out.print("How many nights: ");
+        int nights = scanner.nextInt();
+        scanner.nextLine();
+
         Flight flight = new FlightAdapter().getFlight(from, to);
-        Hotel hotel = new HotelAdapter().getHotel(to);
+        Hotel hotelBase = new HotelAdapter().getHotel(to);
+
+        Hotel hotel = new Hotel(hotelBase.getCity(), hotelBase.getName(),
+                nights, hotelBase.getPricePerNight());
 
         Trip trip = new TripBuilder()
                 .setRoute(new Route(from, to, "standard"))
@@ -23,11 +30,10 @@ public class TripService {
                 .setHotel(hotel)
                 .build();
 
-        System.out.println("\nYour trip: ");
         System.out.println(trip);
 
         double total = flight.getPrice() + (hotel.getNights() * hotel.getPricePerNight());
-        System.out.println("Total Cost: $" + total);
+        System.out.println("Total cost: $" + total);
 
         scanner.close();
     }

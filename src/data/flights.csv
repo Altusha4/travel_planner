@@ -1,0 +1,42 @@
+from,to,airline,price
+Almaty,Rome,Air Astana,500
+Almaty,Paris,Air France,650
+Astana,London,British Airways,800
+Almaty,Istanbul,Turkish Airlines,350
+Astana,Dubai,Emirates,600
+Almaty,Moscow,Aeroflot,300
+Astana,Beijing,Air China,550
+Almaty,Tokyo,Japan Airlines,900
+Astana,New York,Delta Airlines,1200
+Almaty,Singapore,Singapore Airlines,850
+Astana,Frankfurt,Lufthansa,700
+Almaty,Madrid,Iberia,600
+Astana,Bangkok,Thai Airways,650
+Almaty,Sydney,Qantas,1100
+Astana,Amsterdam,KLM,750
+Almaty,Seoul,Korean Air,800
+Astana,Mumbai,Air India,600
+Almaty,Vienna,Austrian Airlines,550
+Astana,Prague,Czech Airlines,500
+Almaty,Warsaw,LOT Polish Airlines,450
+Astana,Helsinki,Finnair,600
+Almaty,Cairo,EgyptAir,400
+Astana,Athens,Aegean Airlines,450
+Almaty,Lisbon,TAP Portugal,650
+Astana,Stockholm,SAS,700
+Almaty,Oslo,Norwegian,680
+Astana,Copenhagen,Scandinavian Airlines,720
+Almaty,Brussels,Brussels Airlines,580
+Astana,Zurich,Swiss International,750
+Almaty,Geneva,Swiss Air,780
+Astana,Dublin,Aer Lingus,650
+Almaty,Manchester,British Airways,620
+Astana,Edinburgh,EasyJet,590
+Almaty,Barcelona,Vueling,550
+Astana,Milan,Alitalia,600
+Almaty,Venice,Ryanair,480
+Astana,Berlin,Air Berlin,520
+Almaty,Hamburg,Eurowings,530
+Astana,Munich,Lufthansa,710
+Almaty,Shanghai,China Eastern,820
+Astana,Hong Kong,Cathay Pacific,880

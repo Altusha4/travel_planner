@@ -1,4 +1,5 @@
 package app;
+
 import service.TripService;
 
 public class Main {

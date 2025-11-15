@@ -10,27 +10,21 @@ public class Trip {
         this.flight = flight;
         this.hotel = hotel;
     }
-
     public Route getRoute(){
         return route;
     }
-
     public Flight getFlight(){
         return flight;
     }
-
     public Hotel getHotel(){
         return hotel;
     }
-
     public String summary(){
         return route.toString() + ", " + hotel.getName() + " (" + hotel.getCity() +")";
     }
-    
     @Override
     public String toString() {
-        return "TRIP\n" +
-                "Route: " + route + "\n" +
+        return  "Route: " + route + "\n" +
                 "Flight: " + flight + "\n" +
                 "Hotel: " + hotel;
     }

@@ -18,9 +18,6 @@ public class Hotel {
     public String getName() {
         return name;
     }
-    public int getNights() {
-        return nights;
-    }
     public double getPricePerNight() {
         return pricePerNight;
     }

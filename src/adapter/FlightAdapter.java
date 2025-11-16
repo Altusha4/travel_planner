@@ -1,28 +1,33 @@
 package adapter;
 import entities.Flight;
-import java.util.Scanner;
-import java.io.File;
+import entities.transport.Transport;
 
-public class FlightAdapter {
-    public Flight getFlight(String from, String to) throws Exception {
+public class FlightAdapter implements FlightProvider {
+    private CsvFlightService csvService;
 
-        File file = new File("src/data/flights.csv");
-        Scanner scanner = new Scanner(file);
-
-        if (scanner.hasNextLine()) {
-            scanner.nextLine();
-        }
-        while (scanner.hasNextLine()) {
-            String line = scanner.nextLine();
-            String[] data = line.split(",");
-
-            if (data[0].equalsIgnoreCase(from) && data[1].equalsIgnoreCase(to)) {
-                scanner.close();
-                return new Flight(data[0], data[1], data[2],
-                        Double.parseDouble(data[3]));
+    public FlightAdapter() {
+        this.csvService = new CsvFlightService();
+    }
+    @Override
+    public Flight findFlight(String from, String to, Transport transport) {
+        try {
+            String[] data = csvService.findFlightData(from, to);
+            if (data != null) {
+                double price = getPriceForTransport(data, transport);
+                return new Flight(data[0], data[1], data[2], price);
             }
+            return null;
+        } catch (Exception e) {
+            return null;
         }
-        scanner.close();
-        return null;
+    }
+    private double getPriceForTransport(String[] data, Transport transport) {
+        switch (transport.getType()) {
+            case "Plane": return Double.parseDouble(data[3]);
+            case "Train": return Double.parseDouble(data[4]);
+            case "Car": return Double.parseDouble(data[5]);
+            case "Bus": return Double.parseDouble(data[6]);
+            default: return Double.parseDouble(data[3]);
+        }
     }
 }

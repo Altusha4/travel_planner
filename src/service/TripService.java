@@ -59,8 +59,10 @@ public class TripService {
         route.setTransport(transport);
 
         try {
-            Flight flight = new FlightAdapter().getFlight(from, to);
-            Hotel hotel = new HotelAdapter().getHotel(to, nights);
+            FlightProvider flightProvider = new FlightAdapter();
+            Flight flight = flightProvider.findFlight(from, to, transport);
+            HotelProvider hotelProvider = new HotelAdapter();
+            Hotel hotel = hotelProvider.findHotel(to, nights);
 
             if (flight == null || hotel == null) {
                 System.out.println("Flight or hotel not found");

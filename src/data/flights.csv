@@ -1,43 +1,43 @@
-from,to,airline,price
-Almaty,Rome,Air Astana,500
-Almaty,Paris,Air France,650
-Astana,London,British Airways,800
-Almaty,Istanbul,Turkish Airlines,350
-Astana,Dubai,Emirates,600
-Almaty,Moscow,Aeroflot,300
-Astana,Beijing,Air China,550
-Almaty,Tokyo,Japan Airlines,900
-Astana,New York,Delta Airlines,1200
-Almaty,Singapore,Singapore Airlines,850
-Astana,Frankfurt,Lufthansa,700
-Almaty,Madrid,Iberia,600
-Astana,Bangkok,Thai Airways,650
-Almaty,Sydney,Qantas,1100
-Astana,Amsterdam,KLM,750
-Almaty,Seoul,Korean Air,800
-Astana,Mumbai,Air India,600
-Almaty,Vienna,Austrian Airlines,550
-Astana,Prague,Czech Airlines,500
-Almaty,Warsaw,LOT Polish Airlines,450
-Astana,Helsinki,Finnair,600
-Almaty,Cairo,EgyptAir,400
-Astana,Athens,Aegean Airlines,450
-Almaty,Lisbon,TAP Portugal,650
-Astana,Stockholm,SAS,700
-Almaty,Oslo,Norwegian,680
-Astana,Copenhagen,Scandinavian Airlines,720
-Almaty,Brussels,Brussels Airlines,580
-Astana,Zurich,Swiss International,750
-Almaty,Geneva,Swiss Air,780
-Astana,Dublin,Aer Lingus,650
-Almaty,Manchester,British Airways,620
-Astana,Edinburgh,EasyJet,590
-Almaty,Barcelona,Vueling,550
-Astana,Milan,Alitalia,600
-Almaty,Venice,Ryanair,480
-Astana,Berlin,Air Berlin,520
-Almaty,Hamburg,Eurowings,530
-Astana,Munich,Lufthansa,710
-Almaty,Shanghai,China Eastern,820
-Astana,Hong Kong,Cathay Pacific,880
-Astana,Barcelona,Vueling,550
+from,to,company,Plane,Train,Car,Bus
+Almaty,Rome,TravelCo,500,350,400,300
+Almaty,Paris,EuroTravel,650,450,500,380
+Astana,London,UKExpress,800,600,650,500
+Almaty,Istanbul,TurkishRoutes,350,250,280,200
+Astana,Dubai,DesertTravel,600,450,480,350
+Almaty,Moscow,SlavicTrans,300,200,220,150
+Astana,Beijing,AsiaConnect,550,400,420,320
+Almaty,Tokyo,PacificExpress,900,700,750,600
+Astana,New York,GlobalTravel,1200,900,950,800
+Almaty,Singapore,AsianRoutes,850,650,680,550
+Astana,Frankfurt,GermanConnect,700,500,520,420
+Almaty,Madrid,IberianTravel,600,450,480,380
+Astana,Bangkok,AsianComfort,650,500,520,400
+Almaty,Sydney,OceanicTravel,1100,850,900,750
+Astana,Amsterdam,DutchRoutes,750,550,580,450
+Almaty,Seoul,KoreanExpress,800,600,620,500
+Astana,Mumbai,IndiaConnect,600,450,470,350
+Almaty,Vienna,AlpineTravel,550,400,420,320
+Astana,Prague,CentralEurope,500,350,380,280
+Almaty,Warsaw,PolishRoutes,450,300,320,250
+Astana,Helsinki,NordicTravel,600,450,470,350
+Almaty,Cairo,AfricanRoutes,400,280,300,220
+Astana,Athens,Mediterranean,450,320,340,260
+Almaty,Lisbon,AtlanticCoast,650,480,500,380
+Astana,Stockholm,Scandinavian,700,520,550,420
+Almaty,Oslo,NorwegianRoutes,680,500,520,400
+Astana,Copenhagen,DanishTravel,720,540,560,440
+Almaty,Brussels,EUCentral,580,420,440,340
+Astana,Zurich,AlpineLuxury,750,580,600,480
+Almaty,Geneva,SwissComfort,780,600,620,500
+Astana,Dublin,CelticRoutes,650,480,500,380
+Almaty,Manchester,UKRegional,620,460,480,360
+Astana,Edinburgh,ScottishTravel,590,440,460,340
+Almaty,Barcelona,CatalanRoutes,550,400,420,320
+Astana,Milan,ItalianStyle,600,450,470,350
+Almaty,Venice,CanalTravel,480,350,370,280
+Astana,Berlin,GermanCapital,520,380,400,300
+Almaty,Hamburg,PortCityTravel,530,390,410,310
+Astana,Munich,BavarianRoutes,710,530,550,430
+Almaty,Shanghai,ChinaExpress,820,620,650,520
+Astana,Hong Kong,AsiaPremium,880,680,700,580
+Almaty,Barcelona,CatalanRoutes,550,400,420,320

@@ -1,27 +1,22 @@
 package adapter;
 import entities.Hotel;
-import java.util.Scanner;
-import java.io.File;
 
-public class HotelAdapter {
-    public Hotel getHotel(String city, int nights) throws Exception {
-        File file = new File("src/data/hotels.csv");
-        Scanner scanner = new Scanner(file);
+public class HotelAdapter implements HotelProvider {
+    private CsvHotelService csvService;
 
-        if (scanner.hasNextLine()) {
-            scanner.nextLine();
-        }
-        while (scanner.hasNextLine()) {
-            String line = scanner.nextLine();
-            String[] data = line.split(",");
-
-            if (data[0].equalsIgnoreCase(city)) {
-                scanner.close();
-                return new Hotel(data[0], data[1], nights,
-                        Double.parseDouble(data[2]));
+    public HotelAdapter() {
+        this.csvService = new CsvHotelService();
+    }
+    @Override
+    public Hotel findHotel(String city, int nights) {
+        try {
+            String[] data = csvService.findHotelData(city);
+            if (data != null) {
+                return new Hotel(data[0], data[1], nights, Double.parseDouble(data[2]));
             }
+            return null;
+        } catch (Exception e) {
+            return null;
         }
-        scanner.close();
-        return null;
     }
 }

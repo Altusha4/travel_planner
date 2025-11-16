@@ -1,6 +1,6 @@
 package observer;
 
-import entities.Trip;
+import decorator.TripComponent;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,10 +21,14 @@ public class TripNotifier implements Subject{
             observer.update(message);
         }
     }
-    public void notifyTripCreated(Trip trip){
-        notifyObservers("New trip is created: " + trip.summary());
+    public void notifyTripCreated(TripComponent trip){
+        String message = "Trip created: " + trip.getDescription()
+            + " | Total: $" + trip.getTotalCost();
+            notifyObservers(message);
     }
-    public void notifyTripUpdated(Trip trip){
-        notifyObservers("Trip updated: " + trip.summary());
+    public void notifyTripUpdated(TripComponent trip){
+        String message = "Trip updated: " + trip.getDescription()
+            + " | Total: $" + trip.getTotalCost();
+            notifyObservers(message);
     }
 }

@@ -13,6 +13,11 @@ import java.util.Scanner;
 
 public class TripService {
 
+    private final TripNotifier notifier;
+    public TripService(TripNotifier notifier){
+        this.notifier = notifier;
+    }
+
     public void createTrip() {
         Scanner scanner = new Scanner(System.in);
 
@@ -71,6 +76,9 @@ public class TripService {
             System.out.println("\n=== TRIP CREATED ===");
             System.out.println(trip);
 
+            double baseTotal = trip.getTotalCost();
+            System.out.println("Base total: $" + baseTotal);
+
             TripComponent finalTrip = trip;
 
             System.out.println("\nExtra services:");
@@ -96,13 +104,9 @@ public class TripService {
             System.out.println("\n=== FINAL TRIP INFO ===");
             System.out.println(finalTrip.getDescription());
             System.out.println("Total: $" + finalTrip.getTotalCost());
-            System.out.println("Total: $" + (flight.getPrice() + (nights * hotel.getPricePerNight())));
 
-            TripNotifier notifier = new TripNotifier();
-            notifier.addObserver(new User("Nuray"));
-            notifier.addObserver(new User("Altynay"));
-            notifier.addObserver(new User("Zaure"));
             notifier.notifyTripCreated(trip);
+            notifier.notifyTripUpdated(finalTrip);
 
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());

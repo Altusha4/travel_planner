@@ -3,13 +3,13 @@ package entities;
 public class Flight {
     private String from;
     private String to;
-    private String airline;
+    private String company;
     private double price;
 
-    public Flight(String from, String to, String airline, double price) {
+    public Flight(String from, String to, String company, double price) {
         this.from = from;
         this.to = to;
-        this.airline = airline;
+        this.company = company;
         this.price = price;
     }
     public double getPrice() {
@@ -17,6 +17,6 @@ public class Flight {
     }
 
     public String toString() {
-        return airline + " from " + from + " to " + to + " at $" + price;
+        return company + " from " + from + " to " + to + " at $" + price;
     }
 }

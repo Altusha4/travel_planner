@@ -1,6 +1,7 @@
 package entities;
+import decorator.TripComponent;
 
-public class Trip {
+public class Trip implements TripComponent {
     private Route route;
     private Flight flight;
     private Hotel hotel;
@@ -27,5 +28,14 @@ public class Trip {
         return  "Route: " + route + "\n" +
                 "Flight: " + flight + "\n" +
                 "Hotel: " + hotel;
+    }
+    @Override
+    public double getTotalCost() {
+        return flight.getPrice() + (hotel.getNights() * hotel.getPricePerNight());
+    }
+
+    @Override
+    public String getDescription() {
+        return summary();
     }
 }

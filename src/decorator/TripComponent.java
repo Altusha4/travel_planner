@@ -1,4 +1,6 @@
 package decorator;
 
-public class TripComponent {
+public interface TripComponent {
+    double getTotalCost();
+    String getDescription() ;
 }
